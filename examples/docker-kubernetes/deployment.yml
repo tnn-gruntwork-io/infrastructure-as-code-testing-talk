@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: hello-world-app
-          image: gruntwork-io/hello-world-app:v1
+          image: tnn-gruntwork-io/hello-world-app:v1
           ports:
             - containerPort: 8080
 ---
