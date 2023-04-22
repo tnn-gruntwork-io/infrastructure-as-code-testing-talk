@@ -2,10 +2,10 @@ package test
 
 import (
 	"fmt"
-	"github.com/gruntwork-io/terratest/modules/docker"
-	http_helper "github.com/gruntwork-io/terratest/modules/http-helper"
-	"github.com/gruntwork-io/terratest/modules/k8s"
-	"github.com/gruntwork-io/terratest/modules/random"
+	"github.com/tnn-gruntwork-io/terratest/modules/docker"
+	http_helper "github.com/tnn-gruntwork-io/terratest/modules/http-helper"
+	"github.com/tnn-gruntwork-io/terratest/modules/k8s"
+	"github.com/tnn-gruntwork-io/terratest/modules/random"
 	"strings"
 	"testing"
 	"time"
@@ -49,7 +49,7 @@ func TestDockerKubernetesUnit(t *testing.T) {
 // Build the example Docker image
 func buildDockerImage(t *testing.T) {
 	options := &docker.BuildOptions{
-		Tags: []string{"gruntwork-io/hello-world-app:v1"},
+		Tags: []string{"tnn-gruntwork-io/hello-world-app:v1"},
 	}
 	docker.Build(t, "../examples/docker-kubernetes", options)
 }

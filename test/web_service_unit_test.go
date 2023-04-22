@@ -2,14 +2,14 @@ package test
 
 import (
 	"fmt"
-	http_helper "github.com/gruntwork-io/terratest/modules/http-helper"
-	"github.com/gruntwork-io/terratest/modules/random"
-	test_structure "github.com/gruntwork-io/terratest/modules/test-structure"
+	http_helper "github.com/tnn-gruntwork-io/terratest/modules/http-helper"
+	"github.com/tnn-gruntwork-io/terratest/modules/random"
+	test_structure "github.com/tnn-gruntwork-io/terratest/modules/test-structure"
 	"strings"
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/terratest/modules/terraform"
+	"github.com/tnn-gruntwork-io/terratest/modules/terraform"
 )
 
 // An example of a unit test for the Terraform module in examples/web-service

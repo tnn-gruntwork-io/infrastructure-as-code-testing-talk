@@ -27,7 +27,7 @@ For production-ready versions of this code and many other types of infrastructur
    Kubernetes locally (e.g., via Docker for Desktop), you're probably already authenticated to it, so there's nothing
    to do.
 1. Install [Docker](https://www.docker.com/).
-1. Build the Docker image: `docker build -t gruntwork-io/hello-world-app:v1 .` 
+1. Build the Docker image: `docker build -t tnn-gruntwork-io/hello-world-app:v1 .` 
 1. Deploy the Docker image to Kubernetes: `kubectl apply -f deployment.yml`
 1. See if the pods got created: `kubectl get pods`. Look for `hello-world-app-deployment`.
 1. See if the service is exposed: `kubectl get services`. Look for `hello-world-app-service`.
